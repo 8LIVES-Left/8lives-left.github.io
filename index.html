@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Website</title>
+    <title>Play Crossy Road</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #2b3a42;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        h1 {
+            color: #4dd0e1;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #ff5722;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+            margin-bottom: 30px;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0,0,0,0.3);
+        }
+        .game-container {
+            width: 100%;
+            max-width: 800px;
+            height: 600px;
+            border: 4px solid #4dd0e1;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>Welcome to my brand new website hosted on GitHub Pages.</p>
+
+    <h1>🐔 Welcome to Crossy Road!</h1>
+    <p>Click the button below to open the game in a new tab, or play the embedded version right here.</p>
+
+    <!-- This button opens the game in a new browser tab -->
+    <a href="https://poki.com" target="_blank" class="btn">Click Here to Play Crossy Road</a>
+
+    <!-- This iframe embeds a playable browser version directly into your page -->
+    <div class="game-container">
+        <iframe src="https://poki.com" title="Crossy Road Game"></iframe>
+    </div>
+
 </body>
 </html>
+
